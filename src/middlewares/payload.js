@@ -7,12 +7,16 @@ const { httpCodes } = require('../utils');
 function ensurePayloadForm(requiredFields) {
     return (req, res, next) => {
         const { body } = req;
-        
-        if (requiredFields.every(field => body[field])) {
+
+        if (requiredFields.every((field) => body[field])) {
             next();
             return;
         }
 
         res.status(httpCodes.BAD_REQUEST).send({ message: 'Por favor llene los datos del formulario.' });
-    }
+    };
 }
+
+module.exports = {
+    ensurePayloadForm
+};
