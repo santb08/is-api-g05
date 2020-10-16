@@ -1,9 +1,17 @@
 // @scripts
 const { httpCodes } = require('../../utils');
+const { riskService } = require('../../services');
 
 async function readOpvar(req, res) {
     try {
-        res.status(httpCodes.OK).json({ message: 'Aquí se debe mostrar la pérdida esperada/capital en riesgo medida con el OPVAR' });
+        const data = await riskService.getOpvar();
+
+        console.log(data);
+
+        res.status(httpCodes.OK).json({
+            data,
+            message: 'Aquí se debe mostrar la pérdida esperada/capital en riesgo medida con el OPVAR'
+        });
     } catch (error) {
         res.status(httpCodes.SERVER_ERROR).send({ message: error.message });
     }

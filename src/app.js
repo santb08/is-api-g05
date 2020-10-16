@@ -6,6 +6,7 @@ const logger = require('morgan');
 
 // @routers
 const {
+    histRouter,
     riskRouter
 } = require('./api');
 
@@ -21,6 +22,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+app.use('/', histRouter);
 app.use('/', riskRouter);
 
 // catch 404 and forward to error handler

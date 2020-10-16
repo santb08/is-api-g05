@@ -10,6 +10,9 @@ function buildRiskService(
         },
         async getOpvar() {
             // TODO: Implement this async function
+            const opVarCalc = Math.random();
+
+            return opVarCalc;
         },
         async getAllOpvar() {
             // TODO: Implement this async function

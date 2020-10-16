@@ -11,6 +11,7 @@ const router = express.Router();
 // @routes
 router.delete('/api/v1/risk/opvar', risk.deleteOpvar);
 router.get('/api/v1/risk/opvar', risk.readOpvar);
+router.get('/api/v1/risk/opvar', risk.readOpvar);
 router.post('/api/v1/risk/opvar', risk.createOpvar);
 router.put('/api/v1/risk/opvar', risk.updateOpvar);
 

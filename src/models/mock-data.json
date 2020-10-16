@@ -1,0 +1,80 @@
+{
+  "hist": [
+    {
+      "id": 0,
+      "name": "Primer histórico de 5 años",
+      "hist":[
+        {
+          "date": "Wed Oct 14 2010 22:32:38 GMT-0500 (hora estándar de Colombia)",
+          "lostVale": 86750
+        },
+        {
+          "date": "Wed Oct 14 2011 22:32:38 GMT-0500 (hora estándar de Colombia)",
+          "lostVale": 25865
+        },
+        {
+          "date": "Wed Oct 14 2012 22:32:38 GMT-0500 (hora estándar de Colombia)",
+          "lostVale": 50859
+        },
+        {
+          "date": "Wed Oct 14 2013 22:32:38 GMT-0500 (hora estándar de Colombia)",
+          "lostVale": 86102
+        },
+        {
+          "date": "Wed Oct 14 2014 22:32:38 GMT-0500 (hora estándar de Colombia)",
+          "lostVale": 2751
+        },
+        {
+          "date": "Wed Oct 14 2015 22:32:38 GMT-0500 (hora estándar de Colombia)",
+          "lostVale": 10487
+        }
+      ]
+    }, {
+      "id": 1,
+      "name": "Segundo histórico de 5 años",
+      "hist": [
+        {
+          "date": "Wed Oct 14 2005 22:32:38 GMT-0500 (hora estándar de Colombia)",
+          "lostVale": 61789
+        },
+        {
+          "date": "Wed Oct 14 2006 22:32:38 GMT-0500 (hora estándar de Colombia)",
+          "lostVale": 8588
+        },
+        {
+          "date": "Wed Oct 14 2007 22:32:38 GMT-0500 (hora estándar de Colombia)",
+          "lostVale": 15508
+        },
+        {
+          "date": "Wed Oct 14 2008 22:32:38 GMT-0500 (hora estándar de Colombia)",
+          "lostVale": 10299
+        },
+        {
+          "date": "Wed Oct 14 2009 22:32:38 GMT-0500 (hora estándar de Colombia)",
+          "lostVale": 42248
+        }
+      ]
+    }, {
+      "id": 2,
+      "name": "Tercer histórico de 5 años",
+      "hist": [
+        {
+          "date": "Wed Oct 14 2010 22:32:38 GMT-0500 (hora estándar de Colombia)",
+          "lostVale": 75687
+        },
+        {
+          "date": "Wed Oct 14 2011 22:32:38 GMT-0500 (hora estándar de Colombia)",
+          "lostVale": 32776
+        },
+        {
+          "date": "Wed Oct 14 2012 22:32:38 GMT-0500 (hora estándar de Colombia)",
+          "lostVale": 18632
+        },
+        {
+          "date": "Wed Oct 14 2013 22:32:38 GMT-0500 (hora estándar de Colombia)",
+          "lostVale": 32776
+        }
+      ]
+    }
+  ]
+}
