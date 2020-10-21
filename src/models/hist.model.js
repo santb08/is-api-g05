@@ -15,11 +15,12 @@ function find() {
     return data;
 }
 
-function insert({ date, lostValue }) {
+function insert({ date, hist, name }) {
     const newRisk = {
         id: MockObjectId(),
         date,
-        lostValue
+        hist,
+        name
     };
 
     data.push(newRisk);

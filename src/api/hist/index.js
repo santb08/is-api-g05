@@ -9,7 +9,7 @@ const { ensurePayloadForm } = require('../../middlewares');
 const router = express.Router();
 
 router.get('/api/v1/hist/opvar', hist.readHistOpvar);
-router.post('/api/v1/hist/opvar', ensurePayloadForm(['date', 'lostValue']), hist.createHistOpvar);
+router.post('/api/v1/hist/opvar', ensurePayloadForm(['date', 'data', 'name']), hist.createHistOpvar);
 
 // @routes
 module.exports = router;

@@ -8,10 +8,11 @@ function buildHistService({
             return data;
         },
 
-        async createHistOpvar({ lostValue, date }) {
+        async createHistOpvar({ data, date, name }) {
             const newHist = histModel.insert({
+                hist: data.split(','),
                 date,
-                lostValue
+                name
             });
 
             return newHist;
