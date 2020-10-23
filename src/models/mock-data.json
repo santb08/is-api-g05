@@ -3,7 +3,7 @@
     {
       "id": 0,
       "name": "Primer histórico de 5 años",
-      "hist":[
+      "hist": [
         {
           "date": "Wed Oct 14 2010 22:32:38 GMT-0500 (hora estándar de Colombia)",
           "lostVale": 86750
@@ -29,7 +29,8 @@
           "lostVale": 10487
         }
       ]
-    }, {
+    },
+    {
       "id": 1,
       "name": "Segundo histórico de 5 años",
       "hist": [
@@ -54,7 +55,8 @@
           "lostVale": 42248
         }
       ]
-    }, {
+    },
+    {
       "id": 2,
       "name": "Tercer histórico de 5 años",
       "hist": [
@@ -76,5 +78,24 @@
         }
       ]
     }
+  ],
+  "monitoreos": [],
+  "informs": [
+      {
+        "id":0,
+        "date": "Wed Oct 14 2005 22:32:38 GMT-0500 (hora estándar de Colombia)",
+        "user": "pedro",
+        "method": "opvar",
+        "value": 0.5150101356850134,
+        "details": "Pedro dejo un mensaje en la zona de mensajes pa que lean su mensaje"
+      },
+      {
+        "id":1,
+        "date": "Wed Oct 17 2005 22:32:38 GMT-0500 (hora estándar de Colombia)",
+        "user": "juan",
+        "method": "lda",
+        "value": 0.5150101356850134,
+        "details": "Juan dejo un mensaje en la zona de mensajes pa que lean su mensaje"
+      }
   ]
 }
