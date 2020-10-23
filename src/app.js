@@ -7,7 +7,8 @@ const logger = require('morgan');
 // @routers
 const {
     histRouter,
-    riskRouter
+    riskRouter,
+    infoRouter
 } = require('./api');
 
 const app = express();
@@ -24,6 +25,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', histRouter);
 app.use('/', riskRouter);
+app.use('/', infoRouter);
 
 // catch 404 and forward to error handler
 app.use((req, res, next) => {

@@ -1,7 +1,8 @@
 // @scripts
 const buildRiskService = require('./risk.service');
 const buildHistService = require('./hist.service');
-const { histModel } = require('../models');
+const buildInfoService = require('./inf.service');
+const { histModel, infoModel } = require('../models');
 
 const riskService = buildRiskService({
     riskModel: {}
@@ -11,7 +12,12 @@ const histService = buildHistService({
     histModel
 });
 
+const infoService = buildInfoService({
+    infoModel
+});
+
 module.exports = {
     histService,
-    riskService
+    riskService,
+    infoService
 };
