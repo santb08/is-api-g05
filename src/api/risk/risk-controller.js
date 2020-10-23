@@ -10,7 +10,7 @@ async function readOpvar(req, res) {
 
         res.status(httpCodes.OK).json({
             data,
-            message: 'Aquí se debe mostrar la pérdida esperada/capital en riesgo medida con el OPVAR'
+            message: 'Aquí se muestra la pérdida esperada/capital en riesgo medida con el OPVAR'
         });
     } catch (error) {
         res.status(httpCodes.SERVER_ERROR).send({ message: error.message });
@@ -21,16 +21,6 @@ async function createOpvar(req, res) {
     try {
         res.status(httpCodes.CREATED).json({
             message: 'Guardar la perdida esperada/capital en riesgo medida con el OPVAR'
-        });
-    } catch (error) {
-        res.status(httpCodes.SERVER_ERROR).send({ message: error.message });
-    }
-}
-
-async function updateOpvar(req, res) {
-    try {
-        res.status(httpCodes.UPDATED).json({
-            message: 'Actualiza la perdida esperada/capital en riesgo medida con el OPVAR'
         });
     } catch (error) {
         res.status(httpCodes.SERVER_ERROR).send({ message: error.message });
@@ -49,7 +39,14 @@ async function deleteOpvar(req, res) {
 
 async function readLda(req, res) {
     try {
-        res.status(httpCodes.OK).json({ message: 'Aquí se debe mostrar la pérdida esperada/capital en riesgo medida con el LDA' });
+        const data = await riskService.getLDA();
+
+        console.log(data);
+
+        res.status(httpCodes.OK).json({
+            data,
+            message: 'Aquí se muestra la pérdida esperada/capital en riesgo medida con el LDA'
+        });
     } catch (error) {
         res.status(httpCodes.SERVER_ERROR).send({ message: error.message });
     }
@@ -59,16 +56,6 @@ async function createLda(req, res) {
     try {
         res.status(httpCodes.CREATED).json({
             message: 'Guardar la perdida esperada/capital en riesgo medida con el LDA'
-        });
-    } catch (error) {
-        res.status(httpCodes.SERVER_ERROR).send({ message: error.message });
-    }
-}
-
-async function updateLda(req, res) {
-    try {
-        res.status(httpCodes.UPDATED).json({
-            message: 'Actualiza la perdida esperada/capital en riesgo medida con el LDA'
         });
     } catch (error) {
         res.status(httpCodes.SERVER_ERROR).send({ message: error.message });
@@ -91,7 +78,5 @@ module.exports = {
     deleteLda,
     deleteOpvar,
     readLda,
-    readOpvar,
-    updateLda,
-    updateOpvar
+    readOpvar
 };

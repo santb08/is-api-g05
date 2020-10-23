@@ -9,15 +9,18 @@ const risk = require('./risk-controller');
 const router = express.Router();
 
 // @routes
+//Elimina una medición realizada con el OpVar
 router.delete('/api/v1/risk/opvar', risk.deleteOpvar);
+//Obtirnr una medición realizada con el OpVar
 router.get('/api/v1/risk/opvar', risk.readOpvar);
-router.get('/api/v1/risk/opvar', risk.readOpvar);
+//Crea una nueva estimación con el OpVar
 router.post('/api/v1/risk/opvar', risk.createOpvar);
-router.put('/api/v1/risk/opvar', risk.updateOpvar);
 
+//Elimina una medición realizada con el LDA
 router.delete('/api/v1/risk/lda', risk.deleteLda);
+//Obtirnr una medición realizada con el LDA
 router.get('/api/v1/risk/lda', risk.readLda);
+//Crea una nueva estimación con el LDA
 router.post('/api/v1/risk/lda', risk.createLda);
-router.put('/api/v1/risk/lda', risk.updateLda);
 
 module.exports = router;
