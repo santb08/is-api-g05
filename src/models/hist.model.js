@@ -1,5 +1,5 @@
-const mockData = require('./mock-data.json');
 const crypto = require('crypto');
+const mockData = require('./mock-data.json');
 
 /**
  * This whole Model is just an abstraction of a real model from and ORM such as Mongoose

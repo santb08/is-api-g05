@@ -3,7 +3,7 @@ function buildHistService({
 }) {
     return {
         async getHistOpvar() {
-            const data = histModel.find();
+            const data = await histModel.find();
 
             return data;
         },
